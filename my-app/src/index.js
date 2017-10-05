@@ -85,7 +85,19 @@ class Game extends React.Component {
 
 // ========================================
 
+// render() ---- REACT
+
+// Render a React element into the DOM in the supplied container and return a
+// reference to the component (or returns null for stateless components).
+//
+// If the React element was previously rendered into container, this will perform
+// an update on it and only mutate the DOM as necessary to reflect the latest
+// React element.
+
 ReactDOM.render(
+  // This is the element that will be rendered to the DOM.  All other Classes
+  // are embedded within it so they will be rendered as well.
   <Game />,
+  // This is the container that all rendered elements will be placed into.
   document.getElementById('root')
 );
